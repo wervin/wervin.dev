@@ -328,6 +328,10 @@ section {
   min-width: 15rem;
 }
 
+.text-container > p {
+  font-size: 1.25rem;
+}
+
 /* SKILLS SECTION */
 
 #skills {
