@@ -221,8 +221,11 @@ section {
 /* ICONS */
 
 .icon {
-  cursor: pointer;
   height: 2rem;
+}
+
+.btn-icon {
+  cursor: pointer;
 }
 
 /* BUTTONS */
@@ -283,6 +286,7 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .about-details-container {
@@ -296,17 +300,17 @@ section {
 }
 
 .about-pic {
-  border-radius: 10%;
+  border-radius: 2rem;
   object-fit: cover;
-  width: 400px;
-  object-position: 100% 0;
-  /* height: 337px; */
+  width: auto;
+  height: 300px;
 }
 
 .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+  height: 2.5rem;
 }
 
 .details-container {
@@ -322,12 +326,6 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
 }
 
 /* EXPERIENCE SECTION */
@@ -446,7 +444,7 @@ article .icon {
 
 .contact-info-upper-container {
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -467,13 +465,6 @@ article .icon {
   font-size: larger;
 }
 
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
-}
 
 /* FOOTER SECTION */
 
