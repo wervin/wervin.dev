@@ -124,7 +124,8 @@ a,
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  /* height: 96vh; */
+  height: fit-content;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -189,6 +190,10 @@ section {
 
 .icon {
   height: 2rem;
+}
+
+.large-icon {
+  height: 3rem;
 }
 
 .btn-icon {
@@ -273,13 +278,6 @@ section {
   height: 300px;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-  height: 2.5rem;
-}
-
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -295,10 +293,9 @@ section {
   height: 80%;
 }
 
-/* EXPERIENCE & SKILLS SECTION */
+/* EXPERIENCE */
 
-#experience,
-#skills {
+#experience {
   position: relative;
 }
 
@@ -318,20 +315,27 @@ section {
 .article-container {
   display: flex;
   text-align: left;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   gap: 2.5rem;
   justify-content: space-around;
+  align-items: center;
 }
 
-article {
+.experience-company-container {
   display: flex;
-  width: 10rem;
-  gap: 0.5rem;
+  gap: 1rem;
+  align-items: center;
+  min-width: 15rem;
 }
 
-article .icon {
-  cursor: default;
+/* SKILLS SECTION */
+
+#skills {
+  position: relative;
+}
+.skills-article {
+  display: flex;
+  gap: 0.5rem;
 }
 
 /* PROJECTS SECTION */
@@ -391,6 +395,22 @@ article .icon {
 
 .contact-info-container p {
   font-size: larger;
+}
+
+.contact-pic {
+  border-radius: 2rem;
+  height: 100px;
+  width: 100px;
+}
+
+.contact-pic-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
 }
 
 
