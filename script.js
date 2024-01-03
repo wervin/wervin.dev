@@ -1,8 +1,11 @@
 document.getElementById('currentYear').innerHTML = new Date().getFullYear();
 
-function toggleMenu() {
+document.addEventListener("DOMContentLoaded", function () {
+  const icon = document.getElementById("mobile-menu");
   const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
+
+  icon.addEventListener("click", function () {
+      menu.classList.toggle("open");
+      icon.classList.toggle("open");
+  });
+});

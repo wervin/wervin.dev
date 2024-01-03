@@ -12,20 +12,49 @@
 </head>
 
 <body>
-  <nav id="desktop-nav">
+
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="./assets/avatar.png" alt="Profile picture" class="logo-pic" />
+        <div class="logo">wervin.dev</div>
+      </div>
+      
+      <div class="menu">
+        <nav>
+          <div class="menu-icon" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      
+          <ul class="menu-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- <nav id="desktop-nav">
     <ul class="logo-container">
       <li><img src="./assets/avatar.png" alt="Profile picture" class="logo-pic" /></li>
       <li><div class="logo">wervin.dev</div></li>
     </ul>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <!-- <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Competences</a></li>
-        <li><a href="#projects">Projects</a></li> -->
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-  </nav>
-  <nav id="hamburger-nav">
+  </nav> -->
+
+  <!-- <nav id="hamburger-nav">
     <ul class="logo-container">
       <li><img src="./assets/avatar.png" alt="Profile picture" class="logo-pic" /></li>
       <li><div class="logo">wervin.dev</div></li>
@@ -38,13 +67,14 @@
       </div>
       <div class="menu-links">
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <!-- <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#skills" onclick="toggleMenu()">Competences</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
     </div>
-  </nav>
+  </nav> -->
+
   <section id="profile">
     <div class="section__pic-container">
       <img src="./assets/profile-pic.png" alt="Vincent Werner profile picture" class="profile-pic " />
@@ -68,7 +98,9 @@
           onclick="location.href='https://github.com/wervin'" />
       </div>
     </div>
+    <img src="./assets/arrow.svg" alt="Arrow icon" class="icon btn-icon arrow" onclick="location.href='./#about'" />
   </section>
+
   <section id="about">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
@@ -102,188 +134,146 @@
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.svg" alt="Arrow icon" class="icon btn-icon arrow" onclick="location.href='./#contact'" />
+    <img src="./assets/arrow.svg" alt="Arrow icon" class="icon btn-icon arrow" onclick="location.href='./#experience'" />
   </section>
 
-  <!-- <section id="experience">
+  <section id="experience">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Experience</h1>
     <div class="experience-details-container">
       <div class="about-containers">
         <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
+          <h2 class="experience-sub-title">Embedded Software Developer</h2>
           <div class="article-container">
             <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <img src="./assets/stmicroelectronics.svg" alt="STMicroelectronics icon" class="icon" />
               <div>
-                <h3>HTML</h3>
-                <p>Experienced</p>
+                <h3>STMicroelectronics</h3>
+                <p>Since October 2021</p>
               </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>SASS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>TypeScript</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Material UI</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>PostgreSQL</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Node JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Express JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Git</h3>
-                <p>Intermediate</p>
-              </div>
+            </div>
             </article>
           </div>
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section> -->
+    <img src="./assets/arrow.svg" alt="Arrow icon" class="icon btn-icon arrow" onclick="location.href='./#skills'" />
+  </section>
 
-  <!-- <section id="skills">
-    <p class="section__text__p1">Review My</p>
-    <h1 class="title">Competences</h1>
-    <div class="skills-details-container">
+  <section id="skills">
+    <p class="section__text__p1">Take a Look at My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
       <div class="about-containers">
         <div class="details-container">
-          <h2 class="skills-sub-title">Frontend Development</h2>
+          <h2 class="experience-sub-title">Languages & Frameworks</h2>
           <div class="article-container">
             <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
               <div>
-                <h3>HTML</h3>
+                <h3>C</h3>
                 <p>Experienced</p>
               </div>
             </article>
             <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
               <div>
-                <h3>CSS</h3>
+                <h3>C++</h3>
                 <p>Experienced</p>
               </div>
             </article>
             <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
               <div>
-                <h3>SASS</h3>
-                <p>Intermediate</p>
+                <h3>Python</h3>
+                <p>Experienced</p>
               </div>
             </article>
             <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
               <div>
-                <h3>JavaScript</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>TypeScript</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Material UI</h3>
+                <h3>Qt</h3>
                 <p>Intermediate</p>
               </div>
             </article>
           </div>
         </div>
         <div class="details-container">
-          <h2 class="skills-sub-title">Frontend Development</h2>
+          <h2 class="experience-sub-title">Hardware Security</h2>
           <div class="article-container">
             <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
               <div>
-                <h3>PostgreSQL</h3>
+                <h3>Glitch Fault Injection</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Laser Fault Injection</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Wireless Connectivity</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>BLE</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>WIFI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Microcontrollers</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>STM32</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Arduino</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Raspberry Pi</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>NXP Kinetis</h3>
                 <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Node JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Express JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Git</h3>
-                <p>Intermediate</p>
               </div>
             </article>
           </div>
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section> -->
+    <img src="./assets/arrow.svg" alt="Arrow icon" class="icon btn-icon arrow" onclick="location.href='./#contact'" />
+  </section>
 
   <!-- <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
@@ -336,6 +326,7 @@
     </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
   </section> -->
+
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
@@ -350,22 +341,27 @@
       </div>
     </div>
   </section>
+
   <footer>
     <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <!-- <li><a href="#experience">Experience</a></li>
-          <li><a href="#experience">Competences</a></li>
-          <li><a href="#projects">Projects</a></li> -->
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="footer-menu">
+        <nav>      
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </nav>
     
     <p>Copyright &#169; <span id="currentYear"></span> Vincent Werner. All Rights Reserved.</p>
   </footer>
+
   <script src="script.js"></script> 
+
 </body>
 
 </html>
