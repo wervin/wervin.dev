@@ -15,86 +15,47 @@
 
   <header>
     <div class="header-container">
-      <div class="logo-container">
-        <img src="./assets/avatar.png" alt="Profile picture" class="logo-pic" />
-        <div class="logo">wervin.dev</div>
+
+      <div class="menu-bar">
+        <div class="logo-container btn-icon" id="wervin-icon">
+          <img src="./assets/avatar.png" alt="Profile picture" class="logo-pic" />
+          <span href="#">wervin.dev</span>
+        </div>
+
+        <div class="menu-icon" id="menu-icon">
+          <img src="./assets/menu.svg" alt="My Github profile" class="icon btn-icon"/>
+        </div>
       </div>
-      
-      <div class="menu">
-        <nav>
-          <div class="menu-icon" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-      
-          <ul class="menu-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+
+      <div class="menu-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </div>
-    </div>
   </header>
 
-  <!-- <nav id="desktop-nav">
-    <ul class="logo-container">
-      <li><img src="./assets/avatar.png" alt="Profile picture" class="logo-pic" /></li>
-      <li><div class="logo">wervin.dev</div></li>
-    </ul>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-  </nav> -->
-
-  <!-- <nav id="hamburger-nav">
-    <ul class="logo-container">
-      <li><img src="./assets/avatar.png" alt="Profile picture" class="logo-pic" /></li>
-      <li><div class="logo">wervin.dev</div></li>
-    </ul>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav> -->
-
   <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/profile-pic.png" alt="Vincent Werner profile picture" class="profile-pic " />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Vincent Werner</h1>
-      <p class="section__text__p2">Embedded Software Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.svg" alt="My LinkedIn profile" class="icon btn-icon"
-          onclick="location.href='https://www.linkedin.com/in/vincent-werner-b067002a4'" />
-        <img src="./assets/github.svg" alt="My Github profile" class="icon btn-icon"
-          onclick="location.href='https://github.com/wervin'" />
+    <div class="profile-container">
+      <img src="./assets/profile-pic.png" alt="Vincent Werner profile picture" class="profile-pic" />
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vincent Werner</h1>
+        <p class="section__text__p2">Embedded Software Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.svg" alt="My LinkedIn profile" class="icon btn-icon"
+            onclick="location.href='https://www.linkedin.com/in/vincent-werner-b067002a4'" />
+          <img src="./assets/github.svg" alt="My Github profile" class="icon btn-icon"
+            onclick="location.href='https://github.com/wervin'" />
+        </div>
       </div>
     </div>
   </section>
@@ -103,32 +64,29 @@
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
     <div class="section-container">
-      <div class="about-details-container">
-        <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic"/>
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/location.svg" alt="Experience icon" class="icon" />
-            <h3>Location</h3>
-            <p>Grenoble<br />France</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/experience.svg" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>5+ years<br />Hardware Security<br />Embedded Software</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.svg" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p>PhD in Computer Science</p>
-          </div>
+      <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="./assets/location.svg" alt="Experience icon" class="icon" />
+          <h3>Location</h3>
+          <p>Grenoble<br />France</p>
         </div>
-        <div class="text-container">
+        <div class="details-container">
+          <img src="./assets/experience.svg" alt="Experience icon" class="icon" />
+          <h3>Experience</h3>
+          <p>5+ years<br />Hardware Security<br />Embedded Software</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/education.svg" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p>PhD in Computer Science</p>
+        </div>
+      </div>
+      <div class="details-container">
           <p>
-            Hello! I'm Vincent Werner, an Embedded Software Developer living in Grenoble, France. 
-            I enjoy working on diverse topics, including fault injection, graphical programming, and embedded wireless connectivity.
-            Join me on this exciting journey where code meets creativity.
+            Hello! I'm Vincent Werner, an Embedded Software Developer living in Grenoble, France.
+            I enjoy working on hardware fault injection, graphical programming, and embedded wireless connectivity.
           </p>
-        </div>
       </div>
     </div>
   </section>
@@ -136,41 +94,55 @@
   <section id="experience">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
+    <div class="section-container">
       <div class="about-containers">
         <div class="details-container">
           <h2 class="experience-sub-title">Embedded Software Developer</h2>
           <div class="article-container">
-              <div class="experience-company-container">
-                <img src="./assets/stmicroelectronics.svg" alt="STMicroelectronics icon" class="large-icon" />
-                <div>
-                  <h3>STMicroelectronics</h3>
-                  <p>Since October 2021</p>
-                </div>
+            <div class="experience-company-container">
+              <img src="./assets/stmicroelectronics.svg" alt="STMicroelectronics icon" class="large-icon" />
+              <div>
+                <h3>STMicroelectronics</h3>
+                <p>Since October 2021</p>
               </div>
-              <ul>
-                <li><p>Designing firmwares and test environments for validating STM32WBA microcontrollers</p></li>
-                <li><p>Designing firmwares and graphical interfaces for production testing of development boards</p></li>
-                <li><p>Designing firmwares for EEMBC benchmarks (CoreMark, ULPMark, SecureMark)</p></li>
-              </ul>
+            </div>
+            <ul>
+              <li>
+                <p>Designing firmwares and test environments for validating STM32WBA microcontrollers</p>
+              </li>
+              <li>
+                <p>Designing firmwares and graphical interfaces for production testing of development boards</p>
+              </li>
+              <li>
+                <p>Designing firmwares for EEMBC benchmarks (CoreMark, ULPMark, SecureMark)</p>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="details-container">
           <h2 class="experience-sub-title">PhD Student</h2>
           <div class="article-container">
-              <div class="experience-company-container">
-                <img src="./assets/cea.svg" alt="CEA icon" class="large-icon" />
-                <div>
-                  <h3>CEA</h3>
-                  <p>Oct 2018 - Oct 2021</p>
-                </div>
+            <div class="experience-company-container">
+              <img src="./assets/cea.svg" alt="CEA icon" class="large-icon" />
+              <div>
+                <h3>CEA</h3>
+                <p>Oct 2018 - Oct 2021</p>
               </div>
-              <ul>
-                <li><p>PhD student at CESTI of CEA-Leti, a leading laboratory for the evaluation of secure components</p></li>
-                <li><p>Optimizing identification and exploitation of fault injection vulnerabilities on microcontrollers</p></li>
-                <li><p>Designing a fault injection simulator based on software emulation</p></li>
-                <li><p>Performing laser and power glitch fault injections</p></li>
-              </ul>
+            </div>
+            <ul>
+              <li>
+                <p>PhD student at CESTI of CEA-Leti, a leading laboratory for the evaluation of secure components</p>
+              </li>
+              <li>
+                <p>Optimizing identification and exploitation of fault injection vulnerabilities on microcontrollers</p>
+              </li>
+              <li>
+                <p>Designing a fault injection simulator based on software emulation</p>
+              </li>
+              <li>
+                <p>Performing laser and power glitch fault injections</p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -180,7 +152,7 @@
   <section id="skills">
     <p class="section__text__p1">Take a Look at My</p>
     <h1 class="title">Skills</h1>
-    <div class="experience-details-container">
+    <div class="section-container">
       <div class="about-containers">
         <div class="details-container">
           <h2 class="experience-sub-title">Languages & Frameworks</h2>
@@ -290,90 +262,28 @@
     </div>
   </section>
 
-  <!-- <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Project Two</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.svg" alt="Email icon" class="icon"/>
-        <p><a href="mailto:wervin.dev@gmail.com">wervin.dev@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.svg" alt="LinkedIn icon" class="icon"/>
-        <p><a href="https://www.linkedin.com/in/vincent-werner-b067002a4">LinkedIn</a></p>
+    <div class="section-container">
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.svg" alt="Email icon" class="icon" />
+          <p><a href="mailto:wervin.dev@gmail.com">wervin.dev@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.svg" alt="LinkedIn icon" class="icon" />
+          <p><a href="https://www.linkedin.com/in/vincent-werner-b067002a4">LinkedIn</a></p>
+        </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <nav>
-      <div class="footer-menu">
-        <nav>      
-          <ul class="footer-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </nav>
-    
     <p>Copyright &#169; <span id="currentYear"></span> Vincent Werner. All Rights Reserved.</p>
   </footer>
 
-  <script src="script.js"></script> 
+  <script src="script.js"></script>
 
 </body>
 

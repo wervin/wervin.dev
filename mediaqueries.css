@@ -1,11 +1,21 @@
 @media screen and (max-width: 1200px) {
+  .header-container {
+    display: block;
+  }
+
+  .header-container.open {
+    padding-bottom: 0rem;
+  }
+
+  .menu-bar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .menu-links {
     display: none;
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    right: 0;
-    width: fit-content;
+    position: relative;
+    width:100%;
     transition: all 0.3 ease-in-out;
     border-radius: 0.5rem;
     background-color: rgba(255, 255, 255, 0.85);
@@ -22,10 +32,14 @@
   .menu-links a {
     display: block;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
     color: black;
     text-decoration: none;
+  }
+
+  .logo-container span {
+    font-size: 1.5rem;
   }
 
   .menu-links a:hover {
@@ -35,22 +49,14 @@
     text-decoration-color: rgb(181, 181, 181);
   }
 
-  #experience,
-  #skills,
-  .experience-details-container {
-    margin-top: 2rem;
+  .profile-container {
+    flex-direction: column;
+    gap: 2rem;
   }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -58,18 +64,22 @@
   article {
     font-size: 1rem;
   }
+
   footer-menu {
     height: fit-content;
     margin-bottom: 2rem;
   }
+
   .contact-info-upper-container {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .contact-info-container p,
   .menu-links li a {
     font-size: 1rem;
   }
+
   .footer-links {
     font-size: 1rem;
     gap: 1rem;
@@ -80,29 +90,22 @@
     text-underline-offset: 0.5rem;
     text-decoration-color: rgb(181, 181, 181);
   }
+
   .experience-sub-title {
     font-size: 1.25rem;
   }
-  .logo {
-    font-size: 1.5rem;
-  }
+
   .menu-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
+
   .section__text__p2 {
     font-size: 1.25rem;
   }
+
   .title {
     font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
   }
 }
