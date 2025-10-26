@@ -21,4 +21,34 @@ document.addEventListener("DOMContentLoaded", function () {
     container.classList.toggle("open");
     menu.classList.toggle("open");
   });
+
+  // Replace inline onclick handlers with event listeners
+  const downloadBtn = document.getElementById("download-cv-btn");
+  const contactBtn = document.getElementById("contact-info-btn");
+  const linkedinIcon = document.getElementById("linkedin-icon");
+  const githubIcon = document.getElementById("github-icon");
+
+  if (downloadBtn) {
+    downloadBtn.addEventListener("click", function() {
+      window.open('./assets/cv.pdf');
+    });
+  }
+
+  if (contactBtn) {
+    contactBtn.addEventListener("click", function() {
+      location.href = './#contact';
+    });
+  }
+
+  if (linkedinIcon) {
+    linkedinIcon.addEventListener("click", function() {
+      location.href = 'https://www.linkedin.com/in/vincent-werner-b067002a4';
+    });
+  }
+
+  if (githubIcon) {
+    githubIcon.addEventListener("click", function() {
+      location.href = 'https://github.com/wervin';
+    });
+  }
 });

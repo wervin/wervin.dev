@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>wervin.dev</title>
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <!-- Preconnect to Google Fonts for improved performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
@@ -19,7 +22,7 @@
       <div class="menu-bar">
         <div class="logo-container btn-icon" id="wervin-icon">
           <img src="./assets/avatar.png" alt="Profile picture" class="logo-pic" />
-          <span href="#">wervin.dev</span>
+          <span>wervin.dev</span>
         </div>
 
         <div class="menu-icon" id="menu-icon">
@@ -27,12 +30,12 @@
         </div>
       </div>
 
-      <div class="menu-links">
+      <nav class="menu-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-      </div>
+      </nav>
   </header>
 
   <section id="profile">
@@ -43,18 +46,16 @@
         <h1 class="title">Vincent Werner</h1>
         <p class="section__text__p2">Embedded Software Developer</p>
         <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')">
+          <button class="btn btn-color-2" id="download-cv-btn">
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" id="contact-info-btn">
             Contact Info
           </button>
         </div>
         <div id="socials-container">
-          <img src="./assets/linkedin.svg" alt="My LinkedIn profile" class="icon btn-icon"
-            onclick="location.href='https://www.linkedin.com/in/vincent-werner-b067002a4'" />
-          <img src="./assets/github.svg" alt="My Github profile" class="icon btn-icon"
-            onclick="location.href='https://github.com/wervin'" />
+          <img src="./assets/linkedin.svg" alt="My LinkedIn profile" class="icon btn-icon" id="linkedin-icon" />
+          <img src="./assets/github.svg" alt="My Github profile" class="icon btn-icon" id="github-icon" />
         </div>
       </div>
     </div>
@@ -64,7 +65,6 @@
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
     <div class="section-container">
-      <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
       <div class="about-containers">
         <div class="details-container">
           <img src="./assets/location.svg" alt="Experience icon" class="icon" />
