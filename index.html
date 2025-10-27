@@ -1,310 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>wervin.dev</title>
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-  <!-- Preconnect to Google Fonts for improved performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 
 <body>
 
-  <header>
-    <div class="header-container">
-
-      <div class="menu-bar">
-        <div class="logo-container btn-icon" id="wervin-icon">
-          <img src="./assets/avatar.png" alt="Profile picture" class="logo-pic" />
-          <span>wervin.dev</span>
-        </div>
-
-        <div class="menu-icon" id="menu-icon">
-          <img src="./assets/menu.svg" alt="My Github profile" class="icon btn-icon"/>
-        </div>
+  <!-- PIXEL SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <div class="pixel-frame">
+        <img src="./assets/avatar.png" alt="Vincent Werner" class="avatar" />
       </div>
 
-      <nav class="menu-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+      <div class="sidebar-title">
+        <span class="pixel-text">WERVIN</span>
+        <span class="pixel-subtitle">HARDWARE SECURITY</span>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#home" class="nav-item active">
+          <span class="nav-icon">▸</span>
+          <span>HOME</span>
+        </a>
+        <a href="#about" class="nav-item">
+          <span class="nav-icon">▸</span>
+          <span>ABOUT</span>
+        </a>
+        <a href="#exp" class="nav-item">
+          <span class="nav-icon">▸</span>
+          <span>EXP</span>
+        </a>
+        <a href="#contact" class="nav-item">
+          <span class="nav-icon">▸</span>
+          <span>CONTACT</span>
+        </a>
       </nav>
-  </header>
 
-  <section id="profile">
-    <div class="profile-container">
-      <img src="./assets/profile-pic-gradient.png" alt="Vincent Werner profile picture" class="profile-pic" />
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Vincent Werner</h1>
-        <p class="section__text__p2">Embedded Software Developer</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" id="download-cv-btn">
-            Download CV
-          </button>
-          <button class="btn btn-color-1" id="contact-info-btn">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img src="./assets/linkedin.svg" alt="My LinkedIn profile" class="icon btn-icon" id="linkedin-icon" />
-          <img src="./assets/github.svg" alt="My Github profile" class="icon btn-icon" id="github-icon" />
-        </div>
+      <div class="sidebar-socials">
+        <a href="https://github.com/wervin" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vincent-werner-b067002a4" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:wervin.dev@gmail.com" class="social-icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <div class="sidebar-footer">
+        <p>© <span id="year"></span> WERVIN</p>
       </div>
     </div>
-  </section>
+  </aside>
 
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <img src="./assets/location.svg" alt="Experience icon" class="icon" />
-          <h3>Location</h3>
-          <p>Vannes<br />France</p>
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- HERO -->
+    <section id="home" class="screen hero-screen">
+      <div class="pixel-border">
+        <div class="screen-content">
+          <h1 class="glitch-title">
+            <span>VINCENT</span>
+            <span>WERNER</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span class="blink">▸</span> HARDWARE SECURITY ENGINEER
+          </div>
+
+          <p class="hero-desc">
+            Specializing in fault injection attacks and embedded system exploitation.
+            Currently developing next-gen attack platforms at Lab-STICC.
+          </p>
+
+          <div class="button-group">
+            <button class="pixel-btn primary" onclick="location.href='#contact'">
+              <i class="fas fa-paper-plane"></i>
+              <span>GET IN TOUCH</span>
+            </button>
+            <button class="pixel-btn secondary" onclick="window.open('./assets/cv.pdf')">
+              <i class="fas fa-download"></i>
+              <span>DOWNLOAD CV</span>
+            </button>
+          </div>
         </div>
-        <div class="details-container">
-          <img src="./assets/experience.svg" alt="Experience icon" class="icon" />
-          <h3>Experience</h3>
-          <p>5+ years</p>
-        </div>
-        <div class="details-container">
-          <img src="./assets/education.svg" alt="Education icon" class="icon" />
-          <h3>Education</h3>
-          <p>PhD in Computer Science</p>
+
+        <div class="hero-image">
+          <img src="./assets/asset-glitched.png" alt="Glitched portrait" />
+          <canvas class="noise-overlay" id="noiseCanvas"></canvas>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="section-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Hardware Security Research Engineer</h2>
-          <div class="article-container">
-            <div class="experience-company-container">
-              <img src="./assets/labsticc.svg" alt="Lab-STICC icon" class="large-icon" />
-              <div>
-                <h3>Lab-STICC</h3>
-                <p>Since September 2025</p>
-              </div>
+    <!-- ABOUT -->
+    <section id="about" class="screen about-screen">
+      <div class="pixel-border">
+        <h2 class="screen-title">// ABOUT ME</h2>
+
+        <div class="stats-grid">
+          <div class="stat-card yellow">
+            <i class="fas fa-map-marker-alt stat-icon"></i>
+            <div class="stat-label">LOCATION</div>
+            <div class="stat-value">Vannes, FR</div>
+          </div>
+          <div class="stat-card pink">
+            <i class="fas fa-briefcase stat-icon"></i>
+            <div class="stat-label">EXPERIENCE</div>
+            <div class="stat-value">7+ Years</div>
+          </div>
+          <div class="stat-card blue">
+            <i class="fas fa-graduation-cap stat-icon"></i>
+            <div class="stat-label">EDUCATION</div>
+            <div class="stat-value">PhD</div>
+          </div>
+        </div>
+
+        <div class="bio-box">
+          <p>
+            Hardware security researcher specializing in fault injection and embedded systems.
+            Completed PhD at CEA, worked at STMicroelectronics on secure firmware development.
+            Now at Lab-STICC creating advanced Glitch and EMFI attack platforms.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="exp" class="screen exp-screen">
+      <div class="pixel-border">
+        <h2 class="screen-title">// EXPERIENCE</h2>
+
+        <div class="experience-list">
+          <!-- Current Position -->
+          <div class="experience-item current">
+            <div class="experience-header">
+              <span class="experience-status"><i class="fas fa-circle"></i> CURRENT</span>
+              <span class="experience-date">2025.09 - NOW</span>
             </div>
-            <ul>
-              <li>
-                <p>Development of Glitch Attack Platform</p>
-              </li>
-              <li>
-                <p>Development of EMFI Attack Platform</p>
-              </li>
-              <li>
-                <p>Hardware Security Research and Vulnerability Assessment</p>
-              </li>
+            <h3>Hardware Security Research Engineer</h3>
+            <div class="experience-location">@ Lab-STICC</div>
+            <ul class="experience-tasks">
+              <li><i class="fas fa-check"></i> Develop Glitch Attack Platform</li>
+              <li><i class="fas fa-check"></i> Build EMFI Attack Systems</li>
+              <li><i class="fas fa-check"></i> Research Hardware Vulnerabilities</li>
             </ul>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Embedded Software Developer</h2>
-          <div class="article-container">
-            <div class="experience-company-container">
-              <img src="./assets/stmicroelectronics.svg" alt="STMicroelectronics icon" class="large-icon" />
-              <div>
-                <h3>STMicroelectronics</h3>
-                <p>Oct 2021 - Sept 2025</p>
-              </div>
+            <div class="experience-tags">
+              <span class="tag yellow">GLITCH</span>
+              <span class="tag yellow">EMFI</span>
+              <span class="tag yellow">HARDWARE</span>
             </div>
-            <ul>
-              <li>
-                <p>Firmware Development for STM32WBA, STM32WB, and STM32WL Microcontrollers (BLE, LoRa)</p>
-              </li>
-              <li>
-                <p>Secure Bootloader Development</p>
-              </li>
-              <li>
-                <p>Desktop Application Development for Board Production Testing with Qt and Python</p>
-              </li>
-              <li>
-                <p>Desktop Application Development for In-House Board Testing with Tauri, Diesel, and Rust</p>
-              </li>
-              <li>
-                <p>Firmware Implementation for EEMBC Benchmarks: CoreMark, ULPMark, and SecureMark</p>
-              </li>
-            </ul>
           </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">PhD Student</h2>
-          <div class="article-container">
-            <div class="experience-company-container">
-              <img src="./assets/cea.svg" alt="CEA icon" class="large-icon" />
-              <div>
-                <h3>CEA</h3>
-                <p>Oct 2018 - Oct 2021</p>
-              </div>
+
+          <!-- Previous Position 1 -->
+          <div class="experience-item">
+            <div class="experience-header">
+              <span class="experience-status"><i class="fas fa-check-square"></i> COMPLETE</span>
+              <span class="experience-date">2021.10 - 2025.09</span>
             </div>
-            <ul>
-              <li>
-                <p>Development of New Strategies to Identify and Exploit Vulnerabilities on Microcontrollers</p>
-              </li>
-              <li>
-                <p>Development of a Fault Injection Simulator based on Hardware Emulation and LLVM</p>
-              </li>
-              <li>
-                <p>Design of a Budget-Friendly Glitch Platform with STM32H7, Featuring Bayesian-Based Automated Glitch Optimization</p>
-              </li>
+            <h3>Embedded Software Developer</h3>
+            <div class="experience-location">@ STMicroelectronics</div>
+            <ul class="experience-tasks">
+              <li><i class="fas fa-check"></i> STM32 Firmware Development</li>
+              <li><i class="fas fa-check"></i> BLE/LoRa Connectivity</li>
+              <li><i class="fas fa-check"></i> Secure Bootloader Implementation</li>
+              <li><i class="fas fa-check"></i> Desktop Apps (Qt, Python, Rust)</li>
             </ul>
+            <div class="experience-tags">
+              <span class="tag yellow">STM32</span>
+              <span class="tag yellow">BLE</span>
+              <span class="tag yellow">RUST</span>
+            </div>
+          </div>
+
+          <!-- Previous Position 2 -->
+          <div class="experience-item">
+            <div class="experience-header">
+              <span class="experience-status"><i class="fas fa-check-square"></i> COMPLETE</span>
+              <span class="experience-date">2018.10 - 2021.10</span>
+            </div>
+            <h3>PhD Student</h3>
+            <div class="experience-location">@ CEA</div>
+            <ul class="experience-tasks">
+              <li><i class="fas fa-check"></i> Vulnerability Research on MCUs</li>
+              <li><i class="fas fa-check"></i> LLVM-based FI Simulator</li>
+              <li><i class="fas fa-check"></i> Budget Glitch Platform Design</li>
+            </ul>
+            <div class="experience-tags">
+              <span class="tag yellow">LLVM</span>
+              <span class="tag yellow">FI</span>
+              <span class="tag yellow">STM32H7</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="skills">
-    <p class="section__text__p1">Take a Look at My</p>
-    <h1 class="title">Skills</h1>
-    <div class="section-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Languages & Frameworks</h2>
-          <div class="article-container">
-            <article class="skills-article">
-              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
-              <div>
-                <h3>C</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article class="skills-article">
-              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
-              <div>
-                <h3>C++</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article class="skills-article">
-              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Python</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article class="skills-article">
-              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Qt</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Hardware Security</h2>
-          <div class="article-container">
-            <article class="skills-article">
-              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Glitch Fault Injection</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article class="skills-article">
-              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Laser Fault Injection</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Wireless Connectivity</h2>
-          <div class="article-container">
-            <article class="skills-article">
-              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
-              <div>
-                <h3>BLE</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article class="skills-article">
-              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
-              <div>
-                <h3>WIFI</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Microcontrollers</h2>
-          <div class="article-container">
-            <article class="skills-article">
-              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
-              <div>
-                <h3>STM32</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article class="skills-article">
-              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Arduino</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article class="skills-article">
-              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Raspberry Pi</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article class="skills-article">
-              <img src="./assets/checkmark.svg" alt="Experience icon" class="icon" />
-              <div>
-                <h3>NXP Kinetis</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-          </div>
+    <!-- CONTACT -->
+    <section id="contact" class="screen contact-screen">
+      <div class="pixel-border">
+        <h2 class="screen-title">// CONTACT</h2>
+
+        <div class="contact-grid">
+          <a href="mailto:wervin.dev@gmail.com" class="contact-card yellow">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <span>EMAIL</span>
+            <span class="contact-detail">wervin.dev@gmail.com</span>
+          </a>
+
+          <a href="https://github.com/wervin" target="_blank" class="contact-card pink">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <span>GITHUB</span>
+            <span class="contact-detail">@wervin</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/vincent-werner-b067002a4" target="_blank" class="contact-card blue">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <span>LINKEDIN</span>
+            <span class="contact-detail">Vincent Werner</span>
+          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="section-container">
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="./assets/email.svg" alt="Email icon" class="icon" />
-          <p><a href="mailto:wervin.dev@gmail.com">wervin.dev@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img src="./assets/linkedin.svg" alt="LinkedIn icon" class="icon" />
-          <p><a href="https://www.linkedin.com/in/vincent-werner-b067002a4">LinkedIn</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>Copyright &#169; <span id="currentYear"></span> Vincent Werner. All Rights Reserved.</p>
-  </footer>
+  </main>
 
   <script src="script.js"></script>
-
 </body>
-
 </html>
