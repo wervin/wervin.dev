@@ -1,9 +1,6 @@
 /* ===== PIXEL BRUTALISM THEME ===== */
 
-@font-face {
-  font-family: 'Pixel';
-  src: local('Courier New');
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   /* Colors from avatar.png */
@@ -37,7 +34,7 @@ html {
 }
 
 body {
-  font-family: 'Courier New', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -94,8 +91,9 @@ body {
 
 .pixel-text {
   display: block;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 2px;
   color: var(--gold);
   text-shadow: 2px 2px 0 var(--pink);
@@ -243,13 +241,15 @@ body {
 }
 
 .screen-title {
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 2rem;
   color: var(--black);
   position: relative;
   padding-bottom: 1rem;
+  line-height: 1.4;
 }
 
 .screen-title::after {
@@ -461,7 +461,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Courier New', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   z-index: 5;
 }
 
@@ -1146,9 +1146,10 @@ body {
 }
 
 .glitch-title {
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 4rem;
-  font-weight: 900;
-  line-height: 1;
+  font-weight: 700;
+  line-height: 1.2;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
 }
